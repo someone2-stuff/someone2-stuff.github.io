@@ -1,0 +1,88 @@
+@keyframes bounceAnimation {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-35px); }
+}
+
+@keyframes largeBounceAnimation {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-45px); }
+}
+
+@keyframes colorAnimation {
+  14% {color: red;}
+  28% {color: orange;}
+  42% {color:yellow;}
+  56% {color: green;}
+  70% {color: blue;}
+  84% {color: indigo;}
+  100% {color: violet;}
+}
+
+@keyframes prismAnimation {
+  0% { transform: perspective(400px) rotateY(0); }
+  100% { transform: perspective(400px) rotateY(360deg); }
+}
+
+#title {
+  font-size: 50px;
+  margin-top: 75px;
+  text-align: center;
+  animation-name: bounceAnimation, colorAnimation;
+  animation-duration: 1s, 5s;
+  animation-timing-function: ease, ease;
+  animation-iteration-count: infinite, infinite;
+  animation-direction: normal, normal;
+  animation-fill-mode: none, none;
+}
+
+#obama-prism-l {
+  cursor: crosshair;
+  width: 150px;
+  height:150px;
+  position: absolute;
+  left: 480px;
+  top: 15px;
+  animation-name: prismAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+#obama-prism-r {
+  cursor: crosshair;
+  width: 150px;
+  height:150px;
+  position: absolute;
+  left: 900px;
+  top: 15px;
+  animation-name: prismAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+#beta-sign {
+  font-family: Tahoma;
+  position:absolute;
+  left: 800px;
+  top: 78px;
+  animation-name: largeBounceAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-fill-mode: none;
+}
+
+p {
+  color: black;
+  text-align: center;
+  margin-top: 75px;
+  font-size: 20px;
+  font-family: Tahoma;
+}
+
